@@ -1,0 +1,134 @@
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+
+main {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2px;
+  /* overflow-x: scroll; */
+  
+
+}
+
+/* @media  (max-width: 375px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-box{
+    width: 400px;
+  }
+} */
+
+.first-box {
+  background-color: #003566;
+  color: white;
+  border: 5px solid #ffc300;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: none;
+  height: 1000px;
+  width: 260px;
+  row-gap: 10px;
+
+
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 80%;
+  height: 80%;
+  border-radius: 400px;
+  background-position: center;
+  background-image: url(progile\ image.jpeg);
+ background-size: cover; */
+
+}
+
+
+
+.first-box img {
+  border-radius: 400px;
+  height: 200px;
+  width: 200px;
+  box-shadow: 1px 1px 40px rgb(255, 255, 255);
+}
+
+.second-box {
+  background-color: #ffc300;
+  height: 1000px;
+  width: 400px;
+  color: black;
+  padding: 20px;
+  border: 5px solid #003566;
+  border-left: none;
+}
+
+.second-box h1 {
+  text-wrap: balance;
+  text-align: center;
+}
+
+.first-box h2 {
+  border: #003566 solid 3px;
+  border-radius: 13px;
+  text-align: center;
+  color: #003566;
+  background-color: #ffc300;
+  text-wrap: wrap;
+  width: auto;
+}
+
+.second-box h2 {
+  color: #ffc300;
+  background-color: #003566;
+  border-radius: 13px;
+  text-align: center;
+  width: auto;
+  padding: 3px;
+  letter-spacing: 2px;
+}
+
+.first-box h2:hover {
+  background-color: #003566;
+  color: white;
+  border: #ffc300 solid 2px;
+}
+
+
+
+
+
+.second-box h2:hover {
+  border: #003566 solid 3px;
+  color: black;
+  background-color: #ffc300;
+  padding: 0;  
+}
+
+
+/* .fun-button {
+  background-color: #003566;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  border-radius: 33px;
+  margin-bottom: 33px;
+  margin-top: 33px;
+  width: 150px;
+  height: 50px;
+  padding: 0;
+} */

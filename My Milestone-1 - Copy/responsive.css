@@ -1,0 +1,120 @@
+body {  
+    background-color: rgb(255, 255, 255);  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    overflow: auto; /* Changed to auto for better usability */  
+    margin: 0; /* Remove default margin */  
+    padding: 0; /* Remove default padding */  
+  }  
+  
+  main {  
+    display: flex;  
+    flex-direction: row;  
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  
+    margin: 5rem; /* Use rem for margin */  
+height: 100vh;  }  
+  
+  .first-box {  
+    background-color: #003566;  
+    color: white;  
+    border: 0.5rem solid #ffc300; /* Use rem for border */  
+    display: flex;  
+    flex-direction: column;  
+    padding: 1.5rem; /* Use rem for padding */  
+    border-right: none;  
+    height: 90%; /* Use viewport height */  
+    width:45%; /* Use viewport width */  
+    row-gap: 1rem; /* Use rem for gap */  
+  }  
+  
+  .profile {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+  }  
+  
+  .first-box img {  
+    border-radius: 50%; /* Use 50% for circular images */  
+    height: 12.5rem; /* Use rem for height */  
+    width: 12.5rem; /* Use rem for width */  
+    box-shadow: 1px 1px 2rem rgba(255, 255, 255, 0.5); /* Adjust shadow for better visibility */  
+  }  
+  
+  .second-box {  
+    background-color: #ffc300;  
+    height: 80vh; /* Use viewport height */  
+    width: 90%; /* Use viewport width */  
+    color: black;  
+    padding: 1.5rem; /* Use rem for padding */  
+    border: 0.5rem solid #003566; /* Use rem for border */  
+    border-left: none;  
+  }  
+  
+  .second-box h1,  
+  .first-box h2,  
+  .second-box h2 {  
+    text-align: center;  
+    margin: 1rem 0; /* Add margin for spacing */  
+  }  
+  
+  .first-box h2 {  
+    border: #003566 solid 0.3rem; /* Use rem for border */  
+    border-radius: 0.8rem; /* Use rem for border-radius */  
+    background-color: #ffc300;  
+  }  
+  
+  .second-box h2 {  
+    color: #ffc300;  
+    background-color: #003566;  
+    border-radius: 0.8rem; /* Use rem for border-radius */  
+    padding: 0.5rem; /* Use rem for padding */  
+    letter-spacing: 0.1rem; /* Use rem for letter-spacing */  
+  }  
+  
+  .first-box h2:hover,  
+  .second-box h2:hover {  
+    cursor: pointer; /* Change cursor on hover */  
+  }  
+  
+  .first-box h2:hover {  
+    background-color: #003566;  
+    color: white;  
+    border: #ffc300 solid 0.2rem; /* Use rem for border */  
+  }  
+  
+  .second-box h2:hover {  
+    border: #003566 solid 0.3rem; /* Use rem for border */  
+    color: black;  
+    background-color: #ffc300;  
+    padding: 0;  
+  }  
+  
+  /* Responsive Styles */  
+  @media (max-width: 768px) {  
+    main {  
+      flex-direction: column; /* Stack boxes vertically on smaller screens */  
+    }  
+  
+    .first-box, .second-box {  
+      width: 90vw; /* Use a larger width on smaller screens */  
+      height: auto; /* Allow height to adjust automatically */  
+    }  
+  
+    .first-box img {  
+      height: 10rem; /* Adjust image size */  
+      width: 10rem; /* Adjust image size */  
+    }  
+  }  
+  
+  @media (max-width: 480px) {  
+    .first-box, .second-box {  
+      width: 95vw; /* Full width on very small screens */  
+      padding: 1rem; /* Reduce padding */  
+    }  
+  
+    .first-box img {  
+      height: 8rem; /* Further adjust image size */  
+      width: 8rem; /* Further adjust image size */  
+    }  
+  }
